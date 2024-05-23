@@ -1,4 +1,4 @@
---Crowdunding Data Engineering
+-Crowdunding Data Engineering
 CREATE TABLE category (
     category_id VARCHAR(10) PRIMARY KEY,
     category VARCHAR(255) NOT NULL
@@ -21,13 +21,13 @@ CREATE TABLE campaign (
     contact_id INT,
     company_name TEXT,
     description VARCHAR(500),
-    goal INT,
-    pledged INT,
+    goal NUMERIC,
+    pledged NUMERIC,
     backers_count INT,
     country CHAR(2),
     currency CHAR(3),
-    launched_date VARCHAR,
-    end_date VARCHAR ,
+    launched_date DATE,
+    end_date DATE ,
     category_id VARCHAR(10),
     subcategory_id VARCHAR(10)
 );
